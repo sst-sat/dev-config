@@ -1,0 +1,202 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "alt+b",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "command": "deleteFile",
+        "key": "d",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+e",
+        "command": "calva-fmt.inferParens",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+w",
+        "command": "calva-fmt.formatCurrentForm",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+q",
+        "command": "calva-fmt.alignCurrentForm",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+left",
+        "command": "calva-fmt.tabDedent",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+right",
+        "command": "calva-fmt.tabIndent",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+f",
+        "command": "calva.jackIn",
+        "when": "calva:keybindingsEnabled && workspaceFolderCount > 0"
+    },
+    {
+        "key": "alt+g",
+        "command": "calva.connectNonProjectREPL",
+        "when": "calva:keybindingsEnabled"
+    },
+    {
+        "key": "alt+1",
+        "command": "calva.loadFile",
+        "when": "calva:keybindingsEnabled && editorLangId == 'clojure'"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.terminal.runRecentCommand",
+        "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "f4",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "f4",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "f4",
+        "command": "-references-view.next",
+        "when": "reference-list.hasResult && references-view.canNavigate"
+    },
+    {
+        "key": "f4",
+        "command": "-goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "f4",
+        "command": "-search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "shift+l",
+        "when": "neovim.mode == normal",
+        "args": ":bprevious<cr>",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "shift+h",
+        "when": "neovim.mode == normal",
+        "args": ":bnext<cr>",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    // splits
+    {
+        "key": "space v",
+        "command": "vscode-neovim.send",
+        "when": "neovim.mode == normal",
+        "args": "<Leader>v"
+    },
+    {
+        "key": "space s",
+        "args": "vscode-neovim.send",
+        "when": "neovim.mode == normal",
+        "command": "<Leader>s"
+    },
+    {
+        "key": "space h",
+        "when": "neovim.mode == normal",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "space j",
+        "when": "neovim.mode == normal",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "space k",
+        "when": "neovim.mode == normal",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "space l",
+        "when": "neovim.mode ==  normal",
+        "command": "workbench.action.focusRightGroup"
+    },
+    // NICE TO HAVE
+    {
+        "key": "space e",
+        "when": "neovim.mode == normal",
+        "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "space w",
+        "command": "workbench.action.files.save",
+        "when": "neovim.mode == normal",
+    },
+    {
+        "key": "space q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "neovim.mode == normal",
+    },
+    {
+        "key": "space right",
+        "when": "neovim.mode == normal",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "space left",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "neovim.mode == normal",
+    },
+]
