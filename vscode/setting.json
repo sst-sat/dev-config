@@ -1,6 +1,8 @@
 {
     "git.autofetch": true,
     "git.confirmSync": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 60,
     "svelte.enable-ts-plugin": true,
     "vim.leader": " ",
     "vim.normalModeKeyBindingsNonRecursive": [
