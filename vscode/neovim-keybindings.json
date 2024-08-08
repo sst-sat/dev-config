@@ -470,13 +470,13 @@
     {
         "key": "space v",
         "command": "editorTextFocus && workbench.action.splitEditor",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus&&neovim.mode == 'normal'",
         // "args": ":vsplit"
     },
     {
         "key": "space s",
         "command": "editorTextFocus && workbench.action.splitEditorDown",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus&&neovim.mode == 'normal'",
         // "args": ":split"
     },
     {
@@ -507,7 +507,7 @@
     },
     {
         "key": "space w",
-        "when": "editorFocus && neovim.mode == normal",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
         "command": "workbench.action.files.save"
     },
     {
