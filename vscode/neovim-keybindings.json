@@ -31,11 +31,6 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
-        "key": "alt+d",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
         "key": "alt+e",
         "command": "calva-fmt.inferParens",
         "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
@@ -127,77 +122,6 @@
         "key": "f4",
         "command": "-search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "shift+l",
-        "when": "neovim.mode == normal",
-        "args": ":bprevious<cr>",
-        "command": "workbench.action.nextEditorInGroup"
-    },
-    {
-        "key": "shift+h",
-        "when": "neovim.mode == normal",
-        "args": ":bnext<cr>",
-        "command": "workbench.action.previousEditorInGroup"
-    },
-    // splits
-    {
-        "key": "space v",
-        "command": "vscode-neovim.send",
-        "when": "neovim.mode == normal",
-        "args": "<Leader>v"
-    },
-    {
-        "key": "space s",
-        "args": "vscode-neovim.send",
-        "when": "neovim.mode == normal",
-        "command": "<Leader>s"
-    },
-    {
-        "key": "space h",
-        "when": "neovim.mode == normal",
-        "command": "workbench.action.focusLeftGroup"
-    },
-    {
-        "key": "space j",
-        "when": "neovim.mode == normal",
-        "command": "workbench.action.focusBelowGroup"
-    },
-    {
-        "key": "space k",
-        "when": "neovim.mode == normal",
-        "command": "workbench.action.focusAboveGroup"
-    },
-    {
-        "key": "space l",
-        "when": "neovim.mode ==  normal",
-        "command": "workbench.action.focusRightGroup"
-    },
-    // NICE TO HAVE
-    {
-        "key": "space e",
-        "when": "neovim.mode == normal",
-        "command": "editor.action.formatDocument"
-    },
-    {
-        "key": "space w",
-        "command": "workbench.action.files.save",
-        "when": "neovim.mode == normal",
-    },
-    {
-        "key": "space q",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "neovim.mode == normal",
-    },
-    {
-        "key": "space right",
-        "when": "neovim.mode == normal",
-        "command": "workbench.action.moveEditorToNextGroup"
-    },
-    {
-        "key": "space left",
-        "command": "workbench.action.moveEditorToPreviousGroup",
-        "when": "neovim.mode == normal",
     },
     {
         "key": "backspace",
@@ -523,5 +447,82 @@
         "key": "ctrl+i",
         "command": "-calva-fmt.tabIndent",
         "when": "calva:keybindingsEnabled && editorTextFocus && !editorReadOnly && !hasOtherSuggestions && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    // VIM BINDINGS
+    {
+        "key": "space f",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.quickOpen",
+        //"args": "<Leader>f"
+    },
+    {
+        "key": "shift+l",
+        "when": "editorTextFocus && neovim.mode == normal",
+        //"args": ":bprevious<cr>",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "shift+h",
+        "when": "editorTextFocus && neovim.mode == normal",
+        //"args": ":bnext<cr>",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "space v",
+        "command": "editorTextFocus && workbench.action.splitEditor",
+        "when": "neovim.mode == normal",
+        // "args": ":vsplit"
+    },
+    {
+        "key": "space s",
+        "command": "editorTextFocus && workbench.action.splitEditorDown",
+        "when": "neovim.mode == normal",
+        // "args": ":split"
+    },
+    {
+        "key": "space h",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "space j",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "space k",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "space l",
+        "when": "editorTextFocus && neovim.mode ==  normal",
+        "command": "workbench.action.focusRightGroup"
+    },
+    // NICE TO HAVE
+    {
+        "key": "space e",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "space w",
+        "when": "editorFocus && neovim.mode == normal",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "space q",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "space right",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "space left",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.moveEditorToPreviousGroup"
     },
 ]
