@@ -469,14 +469,14 @@
     },
     {
         "key": "space v",
-        "command": "editorTextFocus && workbench.action.splitEditor",
-        "when": "editorTextFocus&&neovim.mode == 'normal'",
+        "command": "workbench.action.splitEditor",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
         // "args": ":vsplit"
     },
     {
         "key": "space s",
-        "command": "editorTextFocus && workbench.action.splitEditorDown",
-        "when": "editorTextFocus&&neovim.mode == 'normal'",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus && neovim.mode == 'normal'",
         // "args": ":split"
     },
     {
