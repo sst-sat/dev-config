@@ -10,5 +10,9 @@ return {
     end
 },
 {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-{"nvim-treesitter/nvim-treesitter-textobjects"}
+{"nvim-treesitter/nvim-treesitter-textobjects"},
+{"julienvincent/nvim-paredit",
+  config = function()
+    require("nvim-paredit").setup()
+  end}
 }
