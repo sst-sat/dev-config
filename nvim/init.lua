@@ -11,10 +11,7 @@ vim.keymap.set('n','<Leader>p',':<cr>')
 vim.keymap.set('n','<S-h>',':bprevious')
 vim.keymap.set('n','<S-l>',':bnext')
 
-
-
-if vim.g.vscode then
-else
+local paredit = require("nvim-paredit")
 paredit.setup({
   keys = {
     ["<Leader>z"] = { paredit.api.slurp_forwards, "Raise form" },
@@ -23,4 +20,7 @@ paredit.setup({
     ["<Leader>o"] = { paredit.api.bard_backwards, "Raise form" },
   },
 })
+
+if vim.g.vscode then
+else
 end
