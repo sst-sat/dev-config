@@ -23,7 +23,7 @@
     {
         "key": "shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
+        "when": "filesExplorerFocus & !inputFocus"
     },
     {
         "command": "deleteFile",
@@ -452,7 +452,7 @@
     {
         "key": "space f",
         "when": "editorTextFocus && neovim.mode == normal",
-        "command": "workbench.action.quickOpen",
+        "command": "workbench.action.quickOpen"
         //"args": "<Leader>f"
     },
     {
@@ -470,13 +470,13 @@
     {
         "key": "space v",
         "command": "workbench.action.splitEditor",
-        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
         // "args": ":vsplit"
     },
     {
         "key": "space s",
         "command": "workbench.action.splitEditorDown",
-        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
         // "args": ":split"
     },
     {
@@ -524,5 +524,5 @@
         "key": "space left",
         "when": "editorTextFocus && neovim.mode == normal",
         "command": "workbench.action.moveEditorToPreviousGroup"
-    },
+    }
 ]
