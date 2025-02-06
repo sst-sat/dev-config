@@ -560,5 +560,29 @@
         "key": "space 9",
         "when": "editorTextFocus && neovim.mode == normal",
         "command": "continue.rejectDiff"
+    // PAREDIT
+    {
+        "key": "space z",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "vscode-neovim.send",
+        "args": "<Leader>z",
+    },
+    {
+        "key": "space u",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "vscode-neovim.send",
+        "args": "<Leader>u",
+    },
+    {
+        "key": "space i",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "vscode-neovim.send",
+        "args": "<Leader>i",
+    },
+    {
+        "key": "space o",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "vscode-neovim.send",
+        "args": "<Leader>o",
     }
 ]
