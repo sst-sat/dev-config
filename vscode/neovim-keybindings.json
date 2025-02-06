@@ -23,7 +23,7 @@
     {
         "key": "shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     {
         "command": "deleteFile",
@@ -452,7 +452,7 @@
     {
         "key": "space f",
         "when": "editorTextFocus && neovim.mode == normal",
-        "command": "workbench.action.quickOpen",
+        "command": "workbench.action.quickOpen"
         //"args": "<Leader>f"
     },
     {
@@ -470,13 +470,13 @@
     {
         "key": "space v",
         "command": "workbench.action.splitEditor",
-        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
         // "args": ":vsplit"
     },
     {
         "key": "space s",
         "command": "workbench.action.splitEditorDown",
-        "when": "editorTextFocus && neovim.mode == 'normal'",
+        "when": "editorTextFocus && neovim.mode == 'normal'"
         // "args": ":split"
     },
     {
@@ -525,6 +525,41 @@
         "when": "editorTextFocus && neovim.mode == normal",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
+    // VS Code things
+    {
+        "key": "space m",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "space o",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "editor.action.organizeImports"
+    },
+    {
+        "key": "space r",
+        "when": "editorTextFocus && neovim.mode == visual",
+        "command": "editor.action.refactor"
+    },
+    {
+        "key": "space t",
+        "when": "editorTextFocus && neovim.mode == visual",
+        "command": "editor.action.sourceAction"
+    },
+    {
+        "key": "space 7",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "continue.focusEdit"
+    },
+    {
+        "key": "space 8",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "continue.acceptDiff"
+    },
+    {
+        "key": "space 9",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "command": "continue.rejectDiff"
     // PAREDIT
     {
         "key": "space z",
