@@ -7,8 +7,8 @@
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
-        "when": "editorTextFocus"
+        "key": "space n",
+        "when": "editorTextFocus && neovim.mode == normal"
     },
     {
         "key": "n",
@@ -91,12 +91,13 @@
     },
     {
         "key": "f4",
-        "command": "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
     },
     {
         "key": "f4",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
+        "when": "terminalFocus || filesExplorerFocus"
     },
     {
         "key": "ctrl+h",
@@ -560,29 +561,5 @@
         "key": "space 9",
         "when": "editorTextFocus && neovim.mode == normal",
         "command": "continue.rejectDiff"
-    // PAREDIT
-    {
-        "key": "space z",
-        "when": "editorTextFocus && neovim.mode == normal",
-        "command": "vscode-neovim.send",
-        "args": "<Leader>z",
-    },
-    {
-        "key": "space u",
-        "when": "editorTextFocus && neovim.mode == normal",
-        "command": "vscode-neovim.send",
-        "args": "<Leader>u",
-    },
-    {
-        "key": "space i",
-        "when": "editorTextFocus && neovim.mode == normal",
-        "command": "vscode-neovim.send",
-        "args": "<Leader>i",
-    },
-    {
-        "key": "space o",
-        "when": "editorTextFocus && neovim.mode == normal",
-        "command": "vscode-neovim.send",
-        "args": "<Leader>o",
     }
 ]
