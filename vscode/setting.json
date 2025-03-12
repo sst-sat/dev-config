@@ -1,222 +1,157 @@
 {
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.maxColumn": 60,
-    "svelte.enable-ts-plugin": true,
-    "vim.leader": " ",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<S-h>"
-            ],
-            "commands": [
-                ":bprevious"
-            ]
-        },
-        {
-            "before": [
-                "<S-l>"
-            ],
-            "commands": [
-                ":bnext"
-            ]
-        },
-        // splits
-        {
-            "before": [
-                "leader",
-                "v"
-            ],
-            "commands": [
-                ":vsplit"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "s"
-            ],
-            "commands": [
-                ":split"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.focusLeftGroup"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.focusBelowGroup"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.focusAboveGroup"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.focusRightGroup"
-            ]
-        },
-        // NICE TO HAVE
-        {
-            "before": [
-                "leader",
-                "e"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "w"
-            ],
-            "commands": [
-                ":w!"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "q"
-            ],
-            "commands": [
-                ":wq!"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "x"
-            ],
-            "commands": [
-                ":x!"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "<Right>"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToNextGroup"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "<Left>"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToPreviousGroup"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
-        },
-    ],
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "java.format.settings.profile": "",
-    "remote.autoForwardPortsSource": "hybrid",
-    "vscode-neovim.neovimExecutablePaths.linux": "/home/sstoehrmann/neovim/nvim-linux64-0.10.3/bin/nvim",
-    "vscode-neovim.useWSL": true,
-    "vscode-neovim.wslDistribution": "Ubuntu-22.04",
-    "java.settings.url": ".vscode/settings.prefs",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 60,
+  "svelte.enable-ts-plugin": true,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "github.copilot.editor.enableAutoCompletions": true,
-    "gitlab.duoChat.enabled": false,
-    "gitlab.ls.debug": true,
-    "gitlab.showProjectMergeRequests": false,
-    "gitlab-ci-validator.gitLabURL": "https://de-svl-git-01.usi.mb-satellite.com/newspace/fuzzy-chainsaw",
-    "git.replaceTagsWhenPull": true,
-    "gitlab.pipelineGitRemoteName": "https://de-svl-git-01.usi.mb-satellite.com/newspace/fuzzy-chainsaw",
-    "gitlab.showPipelineUpdateNotifications": true,
-    "gitlab.ignoreCertificateErrors": true,
-    "calva.paredit.defaultKeyMap": "strict",
-    "hediet.vscode-drawio.resizeImages": null,
-    "hediet.vscode-drawio.theme": "atlas",
-    "gitlab.duoCodeSuggestions.enabled": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
     },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
     },
-    "continue.remoteConfigServerUrl": "192.168.2.143:11434",
-    "continue.telemetryEnabled": false,
-    "gitlab.duo.enabledWithoutGitlabProject": false,
-    "gitlab.duoCodeSuggestions.enabledSupportedLanguages": {
-        "vue": false,
-        "terragrunt": false,
-        "terraform": false,
-        "svelte": false,
-        "typescriptreact": false,
-        "typescript": false,
-        "swift": false,
-        "sql": false,
-        "shellscript": false,
-        "scala": false,
-        "rust": false,
-        "ruby": false,
-        "php": false,
-        "python": false,
-        "kotlin": false,
-        "javascriptreact": false,
-        "javascript": false,
-        "java": false,
-        "handlebars": false,
-        "haml": false,
-        "go": false,
-        "csharp": false,
-        "cpp": false,
-        "c": false
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
     },
-    "gitlab.duoCodeSuggestions.openTabsContext": false,
-    "gitlab.keybindingHints.enabled": false,
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
     },
-    "terminal.external.linuxExec": "ghostty",
-    "terminal.integrated.defaultProfile.linux": "tmux",
-    "gitlab.real-timeSecurityScan.scanFileOnSave": false,
-    "spellchecker.ignoreWordsList": [
-        "TLEs",
-        "Deselect"
-    ],
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    {
+      "before": ["leader", "e"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":wq!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
+    {
+      "before": ["leader", "<Right>"],
+      "commands": ["workbench.action.moveEditorToNextGroup"]
+    },
+    {
+      "before": ["leader", "<Left>"],
+      "commands": ["workbench.action.moveEditorToPreviousGroup"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "java.format.settings.profile": "",
+  "remote.autoForwardPortsSource": "hybrid",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/sstoehrmann/neovim/nvim-linux64-0.10.3/bin/nvim",
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.wslDistribution": "Ubuntu-22.04",
+  "java.settings.url": ".vscode/settings.prefs",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "gitlab.duoChat.enabled": false,
+  "gitlab.ls.debug": true,
+  "gitlab.showProjectMergeRequests": false,
+  "gitlab-ci-validator.gitLabURL": "https://de-svl-git-01.usi.mb-satellite.com/newspace/fuzzy-chainsaw",
+  "git.replaceTagsWhenPull": true,
+  "gitlab.pipelineGitRemoteName": "https://de-svl-git-01.usi.mb-satellite.com/newspace/fuzzy-chainsaw",
+  "gitlab.showPipelineUpdateNotifications": true,
+  "gitlab.ignoreCertificateErrors": true,
+  "calva.paredit.defaultKeyMap": "strict",
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "atlas",
+  "gitlab.duoCodeSuggestions.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "continue.remoteConfigServerUrl": "192.168.2.143:11434",
+  "continue.telemetryEnabled": false,
+  "gitlab.duo.enabledWithoutGitlabProject": false,
+  "gitlab.duoCodeSuggestions.enabledSupportedLanguages": {
+    "vue": false,
+    "terragrunt": false,
+    "terraform": false,
+    "svelte": false,
+    "typescriptreact": false,
+    "typescript": false,
+    "swift": false,
+    "sql": false,
+    "shellscript": false,
+    "scala": false,
+    "rust": false,
+    "ruby": false,
+    "php": false,
+    "python": false,
+    "kotlin": false,
+    "javascriptreact": false,
+    "javascript": false,
+    "java": false,
+    "handlebars": false,
+    "haml": false,
+    "go": false,
+    "csharp": false,
+    "cpp": false,
+    "c": false
+  },
+  "gitlab.duoCodeSuggestions.openTabsContext": false,
+  "gitlab.keybindingHints.enabled": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "terminal.external.linuxExec": "ghostty",
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "gitlab.real-timeSecurityScan.scanFileOnSave": false,
+  "spellchecker.ignoreWordsList": ["TLEs", "Deselect", "Roadmap", "Timeboxed"],
+  "cline.vsCodeLmModelSelector": {},
+  "git.blame.statusBarItem.enabled": false,
+  "git.blame.editorDecoration.enabled": false,
+  "roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ]
 }
