@@ -90,14 +90,19 @@
     "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
   },
   {
-    "key": "f4",
+    "key": "ctrl+j",
     "command": "workbench.action.terminal.focus",
     "when": "editorFocus"
   },
   {
-    "key": "f4",
+    "key": "ctrl+l",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus || filesExplorerFocus"
+    "when": " filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": " terminalFocus"
   },
   {
     "key": "ctrl+h",
@@ -451,7 +456,7 @@
   },
   // VIM BINDINGS
   {
-    "key": "space f",
+    "key": "space space",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "workbench.action.quickOpen"
     //"args": "<Leader>f"
@@ -469,50 +474,35 @@
     "command": "workbench.action.previousEditorInGroup"
   },
   {
-    "key": "space v",
+    "key": "space w v",
     "command": "workbench.action.splitEditor",
     "when": "editorTextFocus && neovim.mode == 'normal'"
     // "args": ":vsplit"
   },
   {
-    "key": "space s",
+    "key": "space w h",
     "command": "workbench.action.splitEditorDown",
     "when": "editorTextFocus && neovim.mode == 'normal'"
     // "args": ":split"
   },
   {
-    "key": "space h",
+    "key": "ctrl+h",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "workbench.action.focusLeftGroup"
   },
   {
-    "key": "space j",
-    "when": "editorTextFocus && neovim.mode == normal",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "space k",
-    "when": "editorTextFocus && neovim.mode == normal",
-    "command": "workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "space l",
+    "key": "ctrl+l",
     "when": "editorTextFocus && neovim.mode ==  normal",
     "command": "workbench.action.focusRightGroup"
   },
   // NICE TO HAVE
   {
-    "key": "space e",
+    "key": "space c f",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "editor.action.formatDocument"
   },
   {
-    "key": "space w",
-    "when": "editorTextFocus && neovim.mode == 'normal'",
-    "command": "workbench.action.files.save"
-  },
-  {
-    "key": "space q",
+    "key": "space w q",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "workbench.action.closeActiveEditor"
   },
@@ -533,17 +523,17 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "space o",
+    "key": "space c o",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "editor.action.organizeImports"
   },
   {
-    "key": "space r",
+    "key": "space c r",
     "when": "editorTextFocus && neovim.mode == visual",
     "command": "editor.action.refactor"
   },
   {
-    "key": "space t",
+    "key": "space c t",
     "when": "editorTextFocus && neovim.mode == visual",
     "command": "editor.action.sourceAction"
   },
@@ -566,5 +556,25 @@
     "key": "space T",
     "when": "editorTextFocus && neovim.mode == normal",
     "command": "testing.debugAtCursor"
-  }
+  },
+  {
+    "key": "space c",
+    "when": "editorTextFocus && neovim.mode == visual",
+    "command": "extension.partialDiff.diffSelectionWithClipboard"
+},
+{
+    "key": "shift+v",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && focusedView == 'workbench.panel.output' && neovim.mode != 'insert'"
+},
+{
+    "key": "ctrl+f4",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+},
+{
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+}
 ]
